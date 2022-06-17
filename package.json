@@ -2,6 +2,7 @@
 	"name": "optimizedhtml",
 	"version": "5.0.0",
 	"description": "OptimizedHTML 5 - Lightweight Gulp Starter",
+	"homepage": "https://shoxjahon8805.github.io/projekt/",
 	"main": "index.js",
 	"author": "WebDesign Master",
 	"type": "module",
@@ -10,7 +11,10 @@
 	],
 	"license": "ISC",
 	"scripts": {
-		"start": "gulp"
+		"start": "gulp",
+		"build": "gulp build",
+		"deploy": "gh-pages -d dist",
+		"predeploy": "npm run build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.5",
